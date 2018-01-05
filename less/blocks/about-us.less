@@ -1,0 +1,64 @@
+.about-us {
+  .container();
+};
+
+.about-us__title {
+  position: relative;
+
+  padding: 100px 0 30px 0;
+
+  text-align: center;
+
+  .headline-text;
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 52px;
+      height: 43px;
+
+      top: 30px;
+      right: 135px;
+
+      background-image: url("../img/icons/icon_chain.png");
+    };
+};
+
+.about-us__discription {
+  padding: 0 10px 50px;
+
+  text-align: justify;
+
+  font-size: 16px;
+  line-height: 30px;
+};
+
+@media @tablet-widths {
+  .about-us__title {
+    &::before {
+      top: 30px;
+      right: 350px;
+    };
+  };
+
+  .about-us__discription {
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 34px;
+  };
+};
+
+@media @desktop-widths {
+  .about-us__title {
+    padding-top: 188px;
+    &::before {
+      top: 100px;
+      right: 650px;
+    };
+  };
+
+  .about-us__discription {
+    padding: 0 134px 142px;
+  };
+};

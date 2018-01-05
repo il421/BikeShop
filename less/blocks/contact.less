@@ -1,0 +1,109 @@
+.contact {
+  .container();
+  background-color: @contact-backgroung-color;
+};
+
+.contact__title {
+  position: relative;
+
+  padding-top: 110px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  .slider-text;
+
+  &::before{
+    position: absolute;
+    content: "";
+
+    width: 94px;
+    height: 85px;
+
+    top: 10%;
+    left: 35%;
+
+    background-image: url('../img/icons/logo.png');
+  }
+};
+
+.contact form {
+  text-align: center;
+  padding: 0 10px;
+};
+
+.contact__input {
+  padding: 20px 50px 20px 20px;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+};
+
+.contact__input:hover {
+  border: 2px solid @element-background-color;
+};
+
+.contact__input:hover::placeholder {
+  padding-left: 23px;
+
+  color: @element-background-color;
+
+  transition: 0.3s ease;
+};
+
+.btn__contact {
+  padding: 22px 130px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+
+  color: @extra-text-color;
+  background-color: @element-background-color;
+  border: none;
+};
+
+.btn__contact:hover {
+  opacity: 0.7;
+  color: @headline_text_color;
+
+  transition: 0.6111s ease;
+};
+
+.btn__contact:active {
+  transform: scale(0.9);
+};
+
+@media @tablet-widths {
+  .contact__title {
+    &::before{
+      top: 10%;
+      left: 45%;
+    };
+  };
+
+  .contact__input {
+    padding: 20px 227px 20px 27px;
+    margin-bottom: 110px;
+  };
+
+  .btn__contact {
+    padding: 22px;
+    margin-bottom: 0;
+
+    vertical-align: top;
+  };
+};
+
+@media @desktop-widths {
+  .contact__title {
+    padding-top: 225px;
+    padding-bottom: 30px;
+    &::before{
+      top: 90px;
+      left: 625px;
+    };
+  };
+};
