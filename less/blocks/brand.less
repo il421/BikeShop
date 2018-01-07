@@ -80,7 +80,8 @@
 };
 
 .brand__discription p {
-  padding: 10px;
+  padding: 15px 30px 30px 30px;
+
   .main-text;
   text-align: justify;
 };
@@ -101,10 +102,6 @@
     };
   };
 
-  .brand__discription p {
-    padding: 30px;
-  };
-
   .brand__view--right img {
     width: 768px;
   };
@@ -117,6 +114,7 @@
 
   .brand__view {
     height: 496px;
+    width: 892px;
 
     order: 0;
   };
@@ -142,7 +140,13 @@
 
   .brand__view--left {
     display: block;
+
+    width: 446px;
     order: 3;
+  };
+
+  .brand__view--right {
+    width: 446px;
   };
 
   .brand__view--left::after {
@@ -161,7 +165,7 @@
       position: absolute;
       content: "";
 
-      width: 450px;
+      width: 446px;
       height: 160px;
 
       bottom: 0;
@@ -203,6 +207,10 @@
     order: 2;
   };
 
+  .brand__discription {
+    width: 446px;
+  };
+
   .brand__discription h2 {
     &::after {
       top: 20px;
@@ -217,14 +225,13 @@
       height: 1px;
 
       top: 320px;
-      right: 203px;
+      right: 200px;
 
       background-color: @mail-text-color;
     };
   };
 
   .brand__discription p {
-    padding-bottom: 80px;
     width: 390px;
   };
 };

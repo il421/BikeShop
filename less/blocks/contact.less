@@ -27,33 +27,36 @@
 };
 
 .contact form {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
   padding: 0 10px;
 };
 
 .contact__input {
-  padding: 20px 50px 20px 20px;
+  padding: 20px 0 20px 10px;
   margin-bottom: 10px;
 
   font-size: 20px;
   line-height: 24px;
   font-style: italic;
+
+  border: 1px solid @mail-text-color;
 };
 
 .contact__input:hover {
+  padding-bottom: 19px;
+  padding-top: 19px;
+
   border: 2px solid @element-background-color;
 };
 
 .contact__input:hover::placeholder {
-  padding-left: 23px;
-
   color: @element-background-color;
-
-  transition: 0.3s ease;
 };
 
 .btn__contact {
-  padding: 22px 130px;
+  padding: 22px 132px;
   margin-bottom: 30px;
 
   font-size: 24px;
@@ -84,16 +87,30 @@
     };
   };
 
+  .contact form {
+    display: flex;
+    flex-direction: row;
+
+    height: 66px;
+
+    padding: 0 30px;
+    padding-bottom: 50px;
+  };
+
+
   .contact__input {
-    padding: 20px 227px 20px 27px;
-    margin-bottom: 110px;
+    margin: 0;
+    margin-right: 10px;
+
+    padding-right: 170px;
+  };
+
+  .contact__input:hover {
+    padding-right: 168px;
   };
 
   .btn__contact {
-    padding: 22px;
-    margin-bottom: 0;
-
-    vertical-align: top;
+    margin: 0;
   };
 };
 
@@ -106,4 +123,14 @@
       left: 625px;
     };
   };
+
+  .contact form {
+    padding: 0 440px;
+    padding-bottom: 70px;
+  };
+
+  .btn__contact {
+    padding: 20px;
+  };
+
 };
