@@ -14,19 +14,19 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">about us</a>
+            <a name="about-us" tabindex="1">about us</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">work</a>
+            <a name="work" tabindex="2">work</a>
           </li>
           <li class="main-nav__item main-nav__logo">
             <a>Vintage Bike Shop</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">shop</a>
+            <a name="shop" tabindex="3">shop</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">contact</a>
+            <a name="contact" tabindex="4">contact</a>
           </li>
         </ul>
       </div>
@@ -112,30 +112,29 @@
       </div>
     </div>
     <section class="shop">
-      <ul class="shop__list">
+      <ul class="shop__list" tabindex="5">
         <div class="shop__wrapper">
-          <li class="shop__item1"><a href="#"></a></li>
-          <li class="shop__item2"><a href="#"></a></li>
-          <li class="shop__item3"><a href="#"></a></li>
+          <li class="shop__item1"><a></a></li>
+          <li class="shop__item2"><a></a></li>
+          <li class="shop__item3"><a></a></li>
         </div>
         <div class="shop__wrapper">
-          <li class="shop__item4"><a href="#"></a></li>
-          <li class="shop__item5"><a href="#"></a></li>
+          <li class="shop__item4"><a></a></li>
+          <li class="shop__item5"><a></a></li>
         </div>
         <div class="shop__wrapper">
-          <li class="shop__item6"><a href="#"></a></li>
-          <li class="shop__item7"><a href="#"></a></li>
-          <li class="shop__item8"><a href="#"></a></li>
+          <li class="shop__item6"><a></a></li>
+          <li class="shop__item7"><a></a></li>
+          <li class="shop__item8"><a></a></li>
         </div>
       </ul>
-      <div class="shop__open"><a href="#" class="btn shop__btn">DISCOVER THE SHOP</a></div>
+      <div class="shop__open"><a class="btn shop__btn" tabindex="6">DISCOVER THE SHOP</a></div>
     </section>
     <section class="contact">
       <p class="contact__title">Stay on the saddle!</p>
       <form>
-        <input type="email" class="contact__input" placeholder="enter your email..." required>
-        <!-- сделать проверку на @ -->
-        <button class="btn__contact btn">GO</button>
+        <input type="email" class="contact__input" placeholder="username@domain.domain" autocorrect="off" autocapitalize="off" tabindex="7" required>
+        <button class="btn__contact btn" tabindex="8">GO</button>
       </form>
     </section>
   </main>
@@ -144,15 +143,19 @@
       <address class="footer__address">
         <b>AOD New York</b><br>
         2250 Lexington Avenue<br>
-        New York, NY 10035  - <a href="#">info@domain.com</a>
+        New York, NY 10035  - <a tabindex="9">info@domain.com</a>
       </address>
       <div class="footer__social">
-        <a href="#" class="footer__social-link"></a>
-        <a href="#" class="footer__social-link"></a>
-        <a href="#" class="footer__social-link"></a>
+        <a class="footer__social-link" tabindex="10"></a>
+        <a class="footer__social-link" tabindex="11"></a>
+        <a class="footer__social-link" tabindex="12"></a>
       </div>
     </div>
   </footer>
+  <button class="btn-back" tabindex="13"></button>
+  <script src="js/utiles.js" type="text/javascript"></script>
+  <script src="js/mini_slider.js" type="text/javascript"></script>
+  <script src="js/scroll.js" type="text/javascript"></script>
   <script src="js/style.js" type="text/javascript"></script>
 </body>
 </html>

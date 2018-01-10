@@ -1,13 +1,19 @@
 'use strict';
-(function () {
-  var sliderElements = document.querySelectorAll('.slider__item');
-  var currentSlide = 0;
 
-  var nextSlide = function () {
-    sliderElements[currentSlide].className = 'slider__item';
-    currentSlide = (currentSlide+1)%sliderElements.length;
-    sliderElements[currentSlide].className = 'slider__item slider_show';
-  };
+var btnToBack = document.querySelector('.btn-back');
+var pageHeader = document.querySelector('.page-header');
+var topCoordinate = window.utiles.gettingCoordinats(pageHeader);
 
-  setInterval(nextSlide, 2000);
-})();
+//SLIDER
+setInterval(window.nextSlide, 2000);
+
+//SCROLL TO TOP
+document.addEventListener('scroll', function() {
+  if (window.pageYOffset > 0) {
+    btnToBack.classList.remove('invisible');
+  } else {
+    btnToBack.classList.add('invisible');
+  }
+});
+
+window.scrollToTop(btnToBack, topCoordinate);
