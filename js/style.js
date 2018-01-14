@@ -7,7 +7,7 @@
 
 
   var scrollUp = function () {
-    var topCoordinate = window.utiles.gettingCoordinats(pageHeader);
+    var topCoordinate = pageHeader.getBoundingClientRect().top;
     window.scrollTo(0, topCoordinate);
   };
 
