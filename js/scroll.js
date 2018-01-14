@@ -20,16 +20,15 @@
 
     anchors.forEach(function(item) {
       item.addEventListener('click', function(evt) {
-        var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top; // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+        // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+        var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
         evt.preventDefault();
-        console.log(coordY);
 
         var scroller = setInterval(function() {
           // считаем на сколько скроллить за 1 такт
           var scrollBy = coordY / framesCount;
 
-          // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-          // и дно страницы не достигнуто
+          // если к-во пикселей для скролла за 1 такт больше расстояния до элемент и дно страницы не достигнуто
           if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
             // то скроллим на к-во пикселей, которое соответствует одному такту
             window.scrollBy(0, scrollBy);
