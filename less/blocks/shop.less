@@ -17,7 +17,7 @@
   height: 320px;
 };
 
-.shop__wrapper li {
+.shop__wrapper div {
   background-size: cover;
 };
 
@@ -78,7 +78,7 @@
 };
 
 
-.shop__list li:hover {
+.shop__wrapper div:hover {
   position: relative;
 
   transform: scale(1.01);
@@ -103,13 +103,14 @@
       top: 20px;
       left: 30px;
 
-      background: url("../img/icons/icon_shop.png");
+      background: url("../img/icons/sprites.png") no-repeat;
+      background-position: -199px -150px;
 
       z-index: 1000;
     };
 };
 
-.shop__list li:active {
+.shop__wrapper div:active {
   &::after {
     opacity: 0.9;
   };
@@ -122,7 +123,7 @@
 
 .shop__btn {
   padding: 20px 40px;
-  margin: 75px 10px;
+  margin: 75px 15px;
 
   font-size: 14px;
   font-weight: bold;
@@ -156,7 +157,7 @@
     height: 256px;
   };
 
-  .shop__wrapper li {
+  .shop__wrapper div {
     background-size: cover;
   };
 
@@ -205,7 +206,7 @@
     margin: 75px 222px;
   };
 
-  .shop__list li:hover {
+  .shop__wrapper div:hover {
     &::before {
       left: 15px;
     };
