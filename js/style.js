@@ -46,7 +46,7 @@
   //SLIDER
   setInterval(window.nextSlide, 2000);
 
-  //SCROLL TO SHOW
+  //SCROLL SHOW-HIDE
   window.scrolling.showButtonToScrollUp(hideAndShowScrollBtn);
   //SCROLL TO ELEMENT
   window.scrolling.scrollToElement(anchorsOfMenu, scrollToMenu);
